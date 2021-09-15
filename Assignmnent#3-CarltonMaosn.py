@@ -92,5 +92,5 @@ for remaining in range(5, 0, -1):
     time.sleep(1)
 
 sys.stdout.write("\rComplete!")
-exit 0
-        
+
+exit (0)
