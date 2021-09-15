@@ -87,7 +87,7 @@ print("I designed the program to break in few seconds ")
 
 for remaining in range(5, 0, -1):
     sys.stdout.write("\r")
-    sys.stdout.write("{:2d} seconds remaining.".format(remaining))
+    sys.stdout.write("{:2d} Execution Complete.".format(remaining))
     sys.stdout.flush()
     time.sleep(1)
 
