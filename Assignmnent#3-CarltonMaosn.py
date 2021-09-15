@@ -79,4 +79,18 @@ for n in range(num):
     total_sum += numbers
 avg = total_sum/num
 print('Average of ', num, ' Gas Stations is :', avg)
+##Counter For Program Close or to Break But no break Becasue I hate BREKK outside of loop errors to prevent it ill add a Exit 0
+
+print("Thank you for using My program ")
+print("I designed the program to break in few seconds ")
+##count down feature so that the program can break after a few seconds
+
+for remaining in range(5, 0, -1):
+    sys.stdout.write("\r")
+    sys.stdout.write("{:2d} seconds remaining.".format(remaining))
+    sys.stdout.flush()
+    time.sleep(1)
+
+sys.stdout.write("\rComplete!")
+exit 0
         
