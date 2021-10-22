@@ -4,13 +4,40 @@ import time
 from tqdm import tqdm
 from tabulate import tabulate
 from termcolor import colored, cprint
-# Assignment #3 Software Engineering
+# Final Project Software Engineering
 
 ## The different Gas Stations ##
   
 # This make the program stop executing for 2 seconds to create the delay
-import sys
 
+## To help Personalize the Program in a way we are going to create a greeting
+name = input('Who do I have the pleasure of speaking with ?  ')
+if name != 'Amar':
+  if name != 'Brandy':
+    print("Hello " + name)
+    time.sleep(0.5)
+    print("Thank You For Using the Gas Station App " + name)
+    time.sleep(1)
+    print("please Let Us Know how the app is By rating once the app has executed")
+    time.sleep(3)
+## Login Script Below VERY BASIC NOT CONNECTED TO ANY DB
+
+CorrectUsername = "ChrisHay"
+CorrectPassword = "ChrisHayPassword"
+
+loop = 'true'
+while (loop == 'true'):
+    username = input("Please enter your username: ")
+    if (username == CorrectUsername):
+        password = input("Please enter your password: ")
+    if (password == CorrectPassword):
+            print("Logged in successfully as " + name)
+            loop = 'false'
+    else:
+            print("Password incorrect!")
+else:
+            print("Username incorrect!")
+##BREAK THIS##
 from colorama import init
 init(strip=not sys.stdout.isatty()) # strip colors if stdout is redirected
 from termcolor import cprint 
@@ -79,18 +106,4 @@ for n in range(num):
     total_sum += numbers
 avg = total_sum/num
 print('Average of ', num, ' Gas Stations is :', avg)
-##Counter For Program Close or to Break But no break Becasue I hate BREKK outside of loop errors to prevent it ill add a Exit 0
-
-print("Thank you for using My program ")
-print("I designed the program to break in few seconds ")
-##count down feature so that the program can break after a few seconds
-
-for remaining in range(5, 0, -1):
-    sys.stdout.write("\r")
-    sys.stdout.write("{:2d} Execution Complete.".format(remaining))
-    sys.stdout.flush()
-    time.sleep(1)
-
-sys.stdout.write("\rComplete!")
-
-exit (0)
+        
