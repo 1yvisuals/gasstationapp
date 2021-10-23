@@ -21,9 +21,15 @@ if name != 'Amar':
     print("please Let Us Know how the app is By rating once the app has executed")
     time.sleep(3)
 ## Login Script Below VERY BASIC NOT CONNECTED TO ANY DB
+    print("The Credentials Are below To access")
+##This will allow the program to continue
 
-CorrectUsername = "ChrisHay"
-CorrectPassword = "ChrisHayPassword"
+table2 = ['Username:', 'username'], ['password:', 'password']
+print(tabulate(table2, headers='firstrow', tablefmt='grid'))
+
+      
+CorrectUsername = "username"
+CorrectPassword = "password"
 
 loop = 'true'
 while (loop == 'true'):
@@ -37,6 +43,8 @@ while (loop == 'true'):
             print("Password incorrect!")
 else:
             print("Username incorrect!")
+
+
 ##BREAK THIS##
 from colorama import init
 init(strip=not sys.stdout.isatty()) # strip colors if stdout is redirected
