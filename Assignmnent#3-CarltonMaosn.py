@@ -26,7 +26,7 @@ if name != 'Amar':
 
 table2 = ['Username:', 'username'], ['password:', 'password']
 print(tabulate(table2, headers='firstrow', tablefmt='grid'))
-## will comeback and edit the new feature !! 
+## will comeback and edit the new feature !!
       
 CorrectUsername = "username"
 CorrectPassword = "password"
@@ -114,4 +114,4 @@ for n in range(num):
     total_sum += numbers
 avg = total_sum/num
 print('Average of ', num, ' Gas Stations is :', avg)
-        
+## Thinking about adding a rating system that would report the name intentiy to know who rated the system.         
