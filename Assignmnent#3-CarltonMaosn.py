@@ -71,6 +71,8 @@ while True:
         cont = raw_input("Another one? yes/no > ")
     if cont == "yes":
         time.sleep(1)
+    if cont == "no":
+        break
     ##This creates the loading bar for the table using the Module tabulate
     for i in tqdm(range(100),
                   desc="Loading…",
