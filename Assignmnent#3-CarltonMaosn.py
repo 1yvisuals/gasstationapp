@@ -71,8 +71,10 @@ while True:
         cont = raw_input("Another one? yes/no > ")
     if cont == "yes":
         time.sleep(1)
-    if cont == "no":
         break
+    if cont == "no":
+        print("Thanks for using the app, to continue using restart to get the full experince ")
+        exit()jun
     ##This creates the loading bar for the table using the Module tabulate
     for i in tqdm(range(100),
                   desc="Loading…",
@@ -98,6 +100,9 @@ while True:
     if cont == "yes":
         time.sleep(1)
         break
+    if cont == "no":
+        print("Thank you for using the Program, to access More Features of the Program conintue through")
+        exit()
 ##This creates the loading bar for the table using the Module tabulate
 print("The Most Expensive cost of gas is... ")
 ## COME BACKAND FIX THS S
