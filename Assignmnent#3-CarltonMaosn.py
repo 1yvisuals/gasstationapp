@@ -4,6 +4,7 @@ import time
 from tqdm import tqdm
 from tabulate import tabulate
 from termcolor import colored, cprint
+import webbrowser
 
 # Final Project Software Engineering
 
@@ -71,10 +72,10 @@ while True:
         cont = raw_input("Another one? yes/no > ")
     if cont == "yes":
         time.sleep(1)
-        break
+       
     if cont == "no":
         print("Thanks for using the app, to continue using restart to get the full experince ")
-        exit()jun
+    
     ##This creates the loading bar for the table using the Module tabulate
     for i in tqdm(range(100),
                   desc="Loading…",
@@ -85,8 +86,11 @@ while True:
               ['Sams Club', '3.02'], ['Kroger Gas', '3.12'], ['Cosco Gas', '3.91']]
     print(tabulate(table1, headers='firstrow', tablefmt='grid'))
     break
+
 print("Complete.")
 print("Moving Along......")
+
+
 
 while True:
     # adaption HAHAAHHA
@@ -102,7 +106,7 @@ while True:
         break
     if cont == "no":
         print("Thank you for using the Program, to access More Features of the Program conintue through")
-        exit()
+    
 ##This creates the loading bar for the table using the Module tabulate
 print("The Most Expensive cost of gas is... ")
 ## COME BACKAND FIX THS S
@@ -123,4 +127,25 @@ for n in range(num):
     total_sum += numbers
 avg = total_sum / num
 print('Average of ', num, ' Gas Stations is :', avg)
+time.sleep(2)
+print("Thank you So much for a Great Semester" + name)
+print("Dont Go just yet their is One More Part" + name)
+
+for i in tqdm(range(100),
+                  desc="Loading…",
+                  ascii=False, ncols=75):
+        time.sleep(0.03)
+        break
+print("Follow Me on Linked-IN")
+time.sleep(3)
+webbrowser.open("https://www.linkedin.com/in/carlton-mason-bb7b901b5/", new=1)
+init(strip=not sys.stdout.isatty())
+
+from termcolor import cprint
+from pyfiglet import figlet_format
+
+cprint(figlet_format('Good Bye !!', font='starwars'),
+       'yellow', attrs=['bold'])
+
+ 
 ## Thinking about adding a rating system that would report the name intentiy to know who rated the system.##
